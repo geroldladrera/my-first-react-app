@@ -1,12 +1,51 @@
-# React + Vite
+# React Card Component Example
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is a simple React demo project that showcases how to build reusable components with **React Hooks** (`useState`, `useEffect`) and props.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔑 Key Takeaways
+- **React Functional Components** – using function components with props.  
+- **React Hooks** – demonstrates `useState` and `useEffect` for managing state and side effects.  
+- **State Management**
+  - `count`: increments every time the card is clicked.  
+  - `hasLiked`: toggles between liked ❤️ and unliked 🩶 states.  
+- **Side Effects with `useEffect`** – logs to the console whenever the `hasLiked` state changes.  
+- **Reusability with Props** – each `<Card />` receives its own `title` (and could accept other props like `rating` or `isCool`).  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+- Click on a card to increase its count.  
+- Toggle a like button (❤️ / 🩶).  
+- Multiple `Card` components rendered inside a container.  
+
+---
+
+## 🛠️ Installation & Setup
+Clone the repository and run the project locally.
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/my-first-react-app.git
+
+# Navigate to the project
+cd my-first-react-app
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+
+📸 Preview
+
+When running the project, you’ll see multiple cards (e.g., Star Wars, Avatar, The Lion King) with clickable like buttons and a click counter.
+
+💡 Learning Purpose
+
+This project is ideal for beginners learning:
+
+- How to pass props in React
+- How to manage state and side effects
+- How to build reusable and interactive components
